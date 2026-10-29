@@ -6,6 +6,4 @@
         <item name="android:enforceNavigationBarContrast">false</item>
     </style>
     <color name="paper">#EADFCB</color>
-    <color name="accent">#C2573A</color>
-    <color name="polaroid">#FFFDF8</color>
 </resources>
