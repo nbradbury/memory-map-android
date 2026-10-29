@@ -1,4 +1,4 @@
-# MemoryMap
+# <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="48" height="48" align="absmiddle" alt=""> MemoryMap
 
 An Android app that maps where your photos were taken. Places show up as stacks of polaroids on a sepia-toned National Geographic map. You can filter by date range and tap a place to flip through its photos.
 
