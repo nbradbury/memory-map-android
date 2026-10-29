@@ -4,6 +4,13 @@ An Android app that maps where your photos were taken. Places show up as stacks 
 
 Everything runs on the device. The app reads the GPS and capture time stored in each photo's EXIF data, and the only network traffic is map tiles and reverse geocoding.
 
+<img width="300" alt="Screenshot_20261029_111218" src="https://github.com/user-attachments/assets/141f642b-6e3a-445b-9329-1aadf9ec0c1a" />
+
+<img width="300" alt="Screenshot_20261029_111304" src="https://github.com/user-attachments/assets/fea1b8bd-37d9-48e1-99f0-cec78ab35dac" />
+
+<img width="300" alt="Screenshot_20261029_111322" src="https://github.com/user-attachments/assets/95423217-c1b6-4f79-8f53-1d1e4a8039bf" />
+
+
 ## Features
 
 - Polaroid-stack pins with place names and photo counts. Nearby places merge into a single pin, and tapping it zooms in to split them apart.
