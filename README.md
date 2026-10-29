@@ -67,6 +67,16 @@ adb push lisbon.jpg /sdcard/Pictures/
 adb shell content call --method scan_volume --uri content://media --arg external_primary
 ```
 
+## Screenshots without people
+
+To take screenshots of your own library without featuring anyone, build with `-PhidePeople`:
+
+```sh
+./gradlew :app:installDebug -PhidePeople
+```
+
+Each pin then puts a photo with no people in it on top of its stack. A photo is skipped if ML Kit finds a face or MediaPipe's EfficientDet model finds a person, which catches people seen from behind. Only the top photo is checked, and pins appear once their check finishes. The code, the 4.6 MB model and both ML dependencies are only included in these builds (`app/src/hidePeople/`); normal builds use the no-op in `app/src/showPeople/`.
+
 ## Known limitations
 
 - **Very wide zoom:** MapLibre on Android won't zoom out further than the point where the world fills the view's height. On a tall phone, a date range spanning two continents stops at about zoom 0.85, which puts pins at the edges close to the screen edge.

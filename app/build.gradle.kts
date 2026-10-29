@@ -1,3 +1,7 @@
+// `-PhidePeople` builds keep people out of the top photo of each pin, for repo screenshots. It pulls in ML Kit,
+// MediaPipe and a 4.6 MB model, so it's off by default.
+val hidePeople = providers.gradleProperty("hidePeople").isPresent
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
@@ -31,6 +35,12 @@ android {
     buildFeatures {
         compose = true
     }
+
+    sourceSets.getByName("main") {
+        val dir = if (hidePeople) "src/hidePeople" else "src/showPeople"
+        kotlin.srcDir("$dir/kotlin")
+        assets.srcDir("$dir/assets")
+    }
 }
 
 dependencies {
@@ -48,6 +58,10 @@ dependencies {
     implementation(libs.maplibre.android)
     implementation(libs.coil.compose)
     implementation(libs.kotlinx.serialization.json)
+    if (hidePeople) {
+        implementation(libs.mlkit.face.detection)
+        implementation(libs.mediapipe.tasks.vision)
+    }
 
     testImplementation(libs.junit)
 }

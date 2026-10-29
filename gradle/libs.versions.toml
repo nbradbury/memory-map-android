@@ -10,6 +10,8 @@ maplibre = "13.7.1"
 coil = "3.6.3"
 serialization = "1.12.0"
 junit = "4.13.2"
+mlkitFaces = "16.1.7"
+mediapipe = "1.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -27,6 +29,8 @@ maplibre-android = { group = "org.maplibre.gl", name = "android-sdk", version.re
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
+mediapipe-tasks-vision = { group = "com.google.mediapipe", name = "tasks-vision", version.ref = "mediapipe" }
+mlkit-face-detection = { group = "com.google.mlkit", name = "face-detection", version.ref = "mlkitFaces" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
