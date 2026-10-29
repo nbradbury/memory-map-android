@@ -6,7 +6,7 @@ Everything runs on the device. The app reads the GPS and capture time stored in 
 
 <img width="300" alt="Screenshot_20261029_111218" src="https://github.com/user-attachments/assets/141f642b-6e3a-445b-9329-1aadf9ec0c1a" />
 
-<img width="300" alt="Screenshot_20261029_111304" src="https://github.com/user-attachments/assets/fea1b8bd-37d9-48e1-99f0-cec78ab35dac" />
+<img width="300" alt="Screenshot_20261029_114835" src="https://github.com/user-attachments/assets/ed05b7c0-3c6b-445b-8654-abadd4409750" />
 
 <img width="300" alt="Screenshot_20261029_111322" src="https://github.com/user-attachments/assets/95423217-c1b6-4f79-8f53-1d1e4a8039bf" />
 
