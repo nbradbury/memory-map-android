@@ -67,8 +67,9 @@ fun PinOverlay(groups: List<PinGroup>, project: (Double, Double) -> PointF, onCl
 
 @Composable
 private fun Pin(g: PinGroup, modifier: Modifier) {
+    val thumbs = rememberPinThumbs(g) ?: return
     Box(modifier.size(120.dp, 118.dp)) {
-        STACKS[g.thumbs.size - 1].zip(g.thumbs).forEach { (pos, photo) ->
+        STACKS[thumbs.size - 1].zip(thumbs).forEach { (pos, photo) ->
             val (rot, dx, dy) = pos
             Box(
                 Modifier
